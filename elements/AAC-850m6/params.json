@@ -1,0 +1,13 @@
+{
+    "add_is_visible": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "darkmode-switch",
+    "icon": "ion-ios-moon",
+    "property_applications": {
+        "resizable": true
+    }
+}
