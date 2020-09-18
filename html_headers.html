@@ -1,13 +1,33 @@
 <style>
-.darkmode-layer, .darkmode-toggle {
-  z-index: 500;
-}
+  
+    
+    
 </style>
+<script src="https://www.cssscript.com/demo/cookie-dark-mode-openlight/openLight.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Darkmode.js/1.5.7/darkmode-js.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Darkmode.js/1.5.7/darkmode-js.min.js"></script> -->
 <script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
+ function addDarkmodeWidget() {
+  //  new Darkmode().showWidget();
+window.openLight = new OpenLight("auto");
+
+        //use openLight.addBackgroundTag("some tag") to use currently unsupported tags
+
+        //Adds override to the list of classes that shouldn't use dark mode
+        openLight.addOverrideByClassName("override");
+
+        //Changing the default colors
+        openLight.openLightColors = {
+            darkBackgroundStyle: "rgb(30,30,38)",
+            lightBackgroundStyle: "rgb(255,255,255)",
+            darkForegroundStyle: "rgb(240,240,250)",
+            lightForegroundStyle: "rgb(30,30,40)"
+        }
+
+        //Initialize after settings are set
+
+        
+
   }
   window.addEventListener('load', addDarkmodeWidget);
 </script>
